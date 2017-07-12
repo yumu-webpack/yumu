@@ -1,0 +1,42 @@
+{
+  "name": "yumu",
+  "version": "0.0.2",
+  "description": "A automated building tool",
+  "main": "index.js",
+  "bin": {
+    "yumu": "./bin/yumu.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dushao103500/yumu.git"
+  },
+  "keywords": [
+    "yumu",
+    "webpack",
+    "server"
+  ],
+  "author": "takozhang",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.10.0",
+    "download": "^6.2.5",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^3.1.1",
+    "inquirer-autocomplete-prompt": "^0.11.0",
+    "lodash": "^4.17.4",
+    "promise": "^8.0.0",
+    "unzip": "^0.1.11",
+    "unzip-stream": "^0.1.2",
+    "unzip2": "^0.2.5",
+    "yumu-init": "0.0.8"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/dushao103500/yumu/issues"
+  },
+  "homepage": "https://github.com/dushao103500/yumu#readme"
+}
