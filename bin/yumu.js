@@ -43,6 +43,12 @@ switch (process.argv[2]) {
 	case 'install':
 		handleByYumuInstall();
 		break;
+	case 'server':
+		handleByYumuServer();
+		break;
+	case 'build':
+		handleByYumuBuild();
+		break;
 	default:
 		console.log(chalk.red('  Can\'t find \'yumu '+ process.argv[2] +'\',Please ensure the right commends'));
 
@@ -96,5 +102,55 @@ function handleByYumuInstall() {
 		}
 	} else {
 		yumuInstall.init();
+	}
+}
+
+function handleByYumuServer() {
+	var yumuServer = require('yumu-server');
+	if(process.argv[3]) {
+		var options = yumuServer.options;
+		var action = yumuServer.action;
+		var version = yumuServer.pkg.version;
+		var isGetRight = false;
+		for(var i = 0; i < options.length; i ++ ) {
+			if (process.argv[3] == options[i][0] || process.argv[3] == options[i][1]) {
+				var opt = /\-*(.*)/.exec(options[i][1])[1];
+				action(opt, version);
+				isGetRight = true;
+				return;
+			}
+		}
+		if (!isGetRight) {
+			console.log(chalk.yellow('  Please ensure the right commend'));
+			console.log('');
+			action('help');
+		}
+	} else {
+		yumuServer.init();
+	}
+}
+
+function handleByYumuBuild() {
+	var yumuBuild = require('yumu-build');
+	if(process.argv[3]) {
+		var options = yumuBuild.options;
+		var action = yumuBuild.action;
+		var version = yumuBuild.pkg.version;
+		var isGetRight = false;
+		for(var i = 0; i < options.length; i ++ ) {
+			if (process.argv[3] == options[i][0] || process.argv[3] == options[i][1]) {
+				var opt = /\-*(.*)/.exec(options[i][1])[1];
+				action(opt, version);
+				isGetRight = true;
+				return;
+			}
+		}
+		if (!isGetRight) {
+			console.log(chalk.yellow('  Please ensure the right commend'));
+			console.log('');
+			action('help');
+		}
+	} else {
+		yumuBuild.init();
 	}
 }
