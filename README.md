@@ -1,4 +1,8 @@
-# yumu [![NPM version](https://img.shields.io/npm/v/yumu.svg?style=flat)](https://npmjs.org/package/yumu) [![Github All Releases](https://img.shields.io/github/downloads/yumu-webpack/yumu/total.svg)]() [![GitHub stars](https://img.shields.io/github/stars/yumu-webpack/yumu.svg?style=social&label=Star)]() [![GitHub forks](https://img.shields.io/github/forks/yumu-webpack/yumu.svg?style=social&label=Fork)]()
+# [yumu](https://github.com/yumu-webpack/yumu)
+[![NPM version](https://img.shields.io/npm/v/yumu.svg?style=flat)](https://npmjs.org/package/yumu)
+[![Github All Releases](https://img.shields.io/github/downloads/yumu-webpack/yumu/total.svg)]()
+[![GitHub stars](https://img.shields.io/github/stars/yumu-webpack/yumu.svg?style=social&label=Star)]()
+[![GitHub forks](https://img.shields.io/github/forks/yumu-webpack/yumu.svg?style=social&label=Fork)]()
 
 yumu webpack and react solution
 
