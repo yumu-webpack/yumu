@@ -47,7 +47,22 @@ function handleByYumuInit() {
 	var yumuInit = require('yumu-init');
 	var url = yumuInit.url;
 	if(process.argv[3]) {
-		yumuInit.init(url, process.argv[3]);
+		var options = yumuInit.options;
+		var action = yumuInit.action;
+		var isGetRight = false;
+		for(var i = 0; i < options.length; i ++ ) {
+			if (process.argv[3] == options[i][0] || process.argv[3] == options[i][1]) {
+				var opt = /\-*(.*)/.exec(process.argv[3])[1];
+				action(opt);
+				isGetRight = true;
+				return;
+			}
+		}
+		if (!isGetRight) {
+			console.log(chalk.yellow('Please ensure the right commend'));
+			console.log('');
+			action('help');
+		}
 	} else {
 		yumuInit.init(url);
 	}

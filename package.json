@@ -32,7 +32,7 @@
     "unzip": "^0.1.11",
     "unzip-stream": "^0.1.2",
     "unzip2": "^0.2.5",
-    "yumu-init": "0.0.8"
+    "yumu-init": "0.0.12"
   },
   "devDependencies": {},
   "bugs": {
