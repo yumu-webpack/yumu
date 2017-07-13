@@ -35,6 +35,7 @@ $ yumu init
 - Install the dependencies.
 
 ```bash
+$ cd xx(the project path)
 $ nowa install
 ```
 
