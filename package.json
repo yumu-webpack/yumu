@@ -1,6 +1,6 @@
 {
   "name": "yumu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A automated building tool",
   "main": "index.js",
   "bin": {
@@ -16,7 +16,7 @@
   "keywords": [
     "yumu",
     "webpack",
-    "server"
+    "react"
   ],
   "author": "takozhang",
   "license": "ISC",
@@ -32,7 +32,8 @@
     "unzip": "^0.1.11",
     "unzip-stream": "^0.1.2",
     "unzip2": "^0.2.5",
-    "yumu-init": "0.0.13"
+    "yumu-init": "0.0.13",
+    "yumu-install": "^0.0.3"
   },
   "devDependencies": {},
   "bugs": {
