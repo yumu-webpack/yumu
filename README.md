@@ -36,7 +36,7 @@ $ yumu init
 
 ```bash
 $ cd xx(the project path)
-$ nowa install
+$ yumu install
 ```
 
 - Start a local dev server.
