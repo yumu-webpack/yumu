@@ -49,11 +49,13 @@ function handleByYumuInit() {
 	if(process.argv[3]) {
 		var options = yumuInit.options;
 		var action = yumuInit.action;
+		console.log(yumuInit);
+		var version = yumuInit.pkg.version;
 		var isGetRight = false;
 		for(var i = 0; i < options.length; i ++ ) {
 			if (process.argv[3] == options[i][0] || process.argv[3] == options[i][1]) {
 				var opt = /\-*(.*)/.exec(process.argv[3])[1];
-				action(opt);
+				action(opt, version);
 				isGetRight = true;
 				return;
 			}
