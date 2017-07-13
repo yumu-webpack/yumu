@@ -1,6 +1,6 @@
 {
   "name": "yumu",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A automated building tool",
   "main": "index.js",
   "bin": {
