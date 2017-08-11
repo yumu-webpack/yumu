@@ -32,6 +32,7 @@ $ npm i yumu -g
 
 ```bash
 $ yumu init
+$ yumu init -t (you will choose your template like single page application or multiple page application)
 ```
 
 - Install the dependencies.
