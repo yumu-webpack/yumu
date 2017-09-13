@@ -52,5 +52,5 @@ $ yumu server
 - Build project.
 
 ```bash
-$ yumu build
+$ yumu build 
 ```
