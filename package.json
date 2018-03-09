@@ -1,6 +1,6 @@
 {
   "name": "yumu",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A automated building tool",
   "main": "index.js",
   "bin": {
@@ -33,9 +33,9 @@
     "unzip-stream": "^0.1.2",
     "unzip2": "^0.2.5",
     "yumu-build": "^0.0.2",
-    "yumu-init": "^0.0.24",
-    "yumu-install": "^0.0.4",
-    "yumu-server": "^0.0.1"
+    "yumu-init": "^0.0.26",
+    "yumu-install": "^0.0.5",
+    "yumu-server": "^0.0.2"
   },
   "devDependencies": {},
   "bugs": {
